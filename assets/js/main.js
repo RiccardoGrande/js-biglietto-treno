@@ -34,12 +34,18 @@ if (userBirth <= 18) {
 
     console.log('ticketMinors');
 
+    alert('ticketPrice * 20 / 100')
+
 
 } else if (userBirth >= 65){
 
     console.log('ticketSeniors');
+
+    alert('ticketPrice * 40 / 100')
 } else {
 
     console.log('ticketNormal');
+
+    alert('ticketPrice')
 }
 
