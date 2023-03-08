@@ -20,6 +20,6 @@ console.log(ticketPrice);
 
 if (userBirth < 18) {
 
-    console.log(ticketPrice - %);
+    console.log(ticketPrice - 20 / 100);
 
 }
