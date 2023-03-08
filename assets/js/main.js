@@ -18,16 +18,28 @@ const ticketPrice = numberKilometer * 0.21;
 
 console.log(ticketPrice);
 
+const ticketMinors = ticketPrice * 20 / 100;
+
+console.log(ticketMinors);
+
+const ticketSeniors = ticketPrice * 40 / 100;
+
+console.log(ticketSeniors);
+
+const ticketNormal = ticketPrice;
+
+console.log(ticketNormal);
+
 if (userBirth <= 18) {
 
-    console.log(ticketPrice * 20 / 100);
+    console.log('ticketMinors');
+
 
 } else if (userBirth >= 65){
 
-    console.log(ticketPrice * 40 / 100);
+    console.log('ticketSeniors');
 } else {
 
-    console.log(ticketPrice * numberKilometer);
+    console.log('ticketNormal');
 }
 
-document.getElementById('result_price').innerHTML =
