@@ -14,8 +14,12 @@ const userBirth = prompt('Quanti anni hai?');
 
 console.log(userBirth);
 
-if () {
-    
-} else {
-    
+const ticketPrice = (1 * 0.21);
+
+console.log(ticketPrice);
+
+if (userBirth < 18) {
+
+    console.log(ticketPrice - %);
+
 }
