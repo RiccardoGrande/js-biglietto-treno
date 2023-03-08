@@ -14,18 +14,20 @@ const userBirth = prompt('Quanti anni hai?');
 
 console.log(userBirth);
 
-const ticketPrice = (1 * 0.21);
+const ticketPrice = numberKilometer * 0.21;
 
 console.log(ticketPrice);
 
 if (userBirth <= 18) {
 
-    console.log((ticketPrice * 20 / 100) * numberKilometer);
+    console.log(ticketPrice * 20 / 100);
 
 } else if (userBirth >= 65){
 
-    console.log((ticketPrice * 40 / 100) * numberKilometer);
+    console.log(ticketPrice * 40 / 100);
 } else {
 
     console.log(ticketPrice * numberKilometer);
 }
+
+document.getElementById('result_price').innerHTML =
