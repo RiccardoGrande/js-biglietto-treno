@@ -25,4 +25,7 @@ if (userBirth <= 18) {
 } else if (userBirth >= 65){
 
     console.log(ticketPrice * 100 / 40);
+} else {
+
+    console.log(ticketPrice);
 }
