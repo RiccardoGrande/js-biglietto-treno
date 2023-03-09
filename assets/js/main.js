@@ -30,9 +30,13 @@ const ticketNormal = ticketPrice;
 
 console.log(ticketNormal);
 
+let result_discount;
+
 if (userBirth <= 18) {
 
     console.log('ticketMinors');
+
+    result_discount= ticketMinors
 
     alert('ticketPrice * 20 / 100')
 
@@ -41,11 +45,18 @@ if (userBirth <= 18) {
 
     console.log('ticketSeniors');
 
+    result_discount= ticketSeniors
+
     alert('ticketPrice * 40 / 100')
 } else {
 
     console.log('ticketNormal');
 
+    result_discount= ticketNormal
+
     alert('ticketPrice')
 }
 
+const finalPrice = document.getElementById('result_price');
+
+finalPrice.innerHTML = `${result_discount} ${ticketPrice.toFixed(2)}`;
